@@ -36,29 +36,26 @@
 .guitar-neck>ul>li .dots {
     margin: auto;
     top: 50%;
-    border-radius: 50%;
-    background-color: rgb(65, 65, 65);
     width: 20px;
     height: 20px;
     position: absolute;
 }
 .guitar-neck>ul>li .double-dots {
     display: flex;
-    height: 125px;
-    top: 28%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 200px;
+    top: 5%;
     position: absolute;
 }
-.guitar-neck>ul>li .double-dots span:first-child {
+.guitar-neck>ul>li .double-dots img:first-child {
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    background: rgb(65, 65, 65);
 }
-.guitar-neck>ul>li .double-dots span:last-child {
+.guitar-neck>ul>li .double-dots img:last-child {
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    background: rgb(65, 65, 65);
     position: absolute;
     bottom: 0;
 }
@@ -68,7 +65,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    height: 210px;
+    height: 200px;
     width: 100%;
     z-index: 1;
     list-style: none;

@@ -17,28 +17,28 @@ export default function Fretboard() {
                     <Fret fretNum={2}/>
                 </li>
                 <li>
-                    <div className="dots"></div>
+                    <img className="dots" alt="dot" src="/images/fret-dot.webp" />
                     <Fret fretNum={3}/>
                 </li>
                 <li>
                     <Fret fretNum={4}/>
                 </li>
                 <li>
-                    <div className="dots"></div>
+                    <img className="dots" alt="dot" src="/images/fret-dot.webp" />
                     <Fret fretNum={5}/>
                 </li>
                 <li>
                     <Fret fretNum={6}/>
                 </li>
                 <li>
-                    <div className="dots"></div>
+                    <img className="dots" alt="dot" src="/images/fret-dot.webp" />
                     <Fret fretNum={7}/>
                 </li>
                 <li>
                     <Fret fretNum={8}/>
                 </li>
                 <li>
-                    <div className="dots"></div>
+                    <img className="dots" alt="dot" src="/images/fret-dot.webp" />
                     <Fret fretNum={9}/>
                 </li>
                 <li>
@@ -49,8 +49,8 @@ export default function Fretboard() {
                 </li>
                 <li>
                     <div className="double-dots">
-                        <span></span>
-                        <span></span>
+                        <img className="dots" alt="dot" src="/images/fret-dot.webp" />
+                        <img className="dots" alt="dot" src="/images/fret-dot.webp" />
                     </div>
                     <Fret fretNum={12}/>
                 </li>
