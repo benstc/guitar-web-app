@@ -36,7 +36,7 @@ export default function FindNote() {
             <h1>Find the note!</h1>
             <div className="buttons-wrapper">
                 <div className="buttons-container">
-                    <button className="instructions-button">Instructions</button>
+                    <button onClick={() => setViewInstructions(!viewInstructions)} className="instructions-button">Instructions</button>
                     <button className="learning-button">Play Learning Mode</button>
                     <button className="timed-button">Play Timed Mode</button>
                 </div>
