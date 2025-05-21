@@ -26,7 +26,7 @@
     height: 100%;
     color: white;
 }
-.guitar-neck>ul>:not(:first-child)>span {
+ .guitar-neck>ul>:not(:first-child)>span {
     opacity: 0;
 }
 .guitar-neck>ul {
@@ -76,4 +76,20 @@
     background-color: lightgrey;
     box-shadow: .04em .37em .02em 0 rgba(0, 0, 0, .1);
     background-image: repeating-linear-gradient(50deg, rgba(0, 0, 0, .6), transparent .15em, transparent .2em), linear-gradient(180deg, rgba(0, 0, 0, .1) 10%, hsla(0, 0%, 100%, .25) 15%, hsla(0, 0%, 100%, .8) 30%, hsla(0, 0%, 100%, .25) 45%, rgba(0, 0, 0, .6) 90%);
+}
+.guitar-neck>ul>li>.active-fret {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    z-index:2;
+    width: 40%;
+    height: 30%;
+    color: white;
+    background-color: grey;
+    opacity: 1;
+    box-shadow:
+        inset 0px 5px lightgray,
+        inset 5px 0px lightgray,
+        inset -5px 0px lightgray,
+        inset 0px -5px lightgray
 }

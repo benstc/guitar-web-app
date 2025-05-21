@@ -1,4 +1,4 @@
-export default function Fret({ fretNum }) {
+export default function Fret({ fretNum, activeFrets, handleClick }) {
     const notes = ['E', 'F', 'F#', 'G', "G#", "A", "A#", "B", "C", "C#", "D", "D#"]
 
     function calculateFretNotes(fretNum) {
@@ -11,31 +11,17 @@ export default function Fret({ fretNum }) {
         return [string1, string2, string3, string4, string5, string6]
     }
     const fretNotes = calculateFretNotes(fretNum)
-
-    const handleClick = (event) => {
-        console.log(event.target.textContent)
-    }
     
     return (
         <>
-            <span onClick={handleClick}>
-                <span>{fretNotes[0]}</span>
-            </span>
-            <span onClick={handleClick}>
-                <span>{fretNotes[1]}</span>
-            </span>
-            <span onClick={handleClick}>
-                <span>{fretNotes[2]}</span>
-            </span>
-            <span onClick={handleClick}>
-                <span>{fretNotes[3]}</span>
-            </span>
-            <span onClick={handleClick}>
-                <span>{fretNotes[4]}</span>
-            </span>
-            <span onClick={handleClick}>
-                <span>{fretNotes[5]}</span>
-            </span>
+            {fretNotes.map((note, index) => (
+                <span
+                    className={activeFrets[index] === fretNum ? "active-fret" : ""}
+                    key={index}
+                    onClick={() => handleClick(fretNum, index)}>
+                    <span>{note}</span>
+                </span>
+            ))}
         </>
     )
 }
